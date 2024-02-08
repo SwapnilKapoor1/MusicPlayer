@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" type="text/css" href="aud.css">
+</head>
+<body>
+    <div id="heading">
+        <h1 id="top-heading">Music Player</h1>
+        <label class="switch">
+            <input class="checkbox" type="checkbox">
+            <span class="slider round"></span>
+            <span id="head">Dark</span>
+          </label>
+    </div>
+    <container>
+        <div id="all-song" class="bck">
+            <div>
+                <span>Filter by Genre:</span>
+                <select id="filter">
+                    <option>All</option>
+                    <option>Hip Hop</option>
+                    <option>Pop</option>
+                    <option>Rock</option>
+                </select>
+            </div>
+            <div id="filtered">
+                <h2>All Songs</h2>      
+                <div id="son"></div>
+            </div>
+        </div>
+        <div id="card" class="bck">
+            <div id="image"></div>
+            <audio id="music" src="" controls></audio>
+            <div id="prev"></div>
+            <div id="next"></div>
+            <div id="add">Add to Playlist</div>
+        </div>
+        <div id="third">
+            <div id="search">
+                <input id="create" type="text" placeholder="Enter Playlist name" >
+                <span id="button">Create Playlist</span>
+            </div>
+            <div id="playlist" class="bck">
+                <div ><h2>Current Playlist</h2>
+                <div id="currentPl"></div>
+                <div id="allPl"><h2>All Playlists</h2></div>
+            </div>
+        </div>
+    </container>
+
+<script src="aud.js"></script>  
+</body>
+</html>
